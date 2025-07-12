@@ -49,6 +49,7 @@ page 80000 AZStorageAndServicePrincipal
                         
                     ABSBLOBClient.Initialize('<storageaccountname>', '<container name>', StorageServiceAuthorization);
                     ABSOperationResponse := ABSBlobClient.ListBlobs(ABSContainerContentTemp);
+                    Message('%1',ABSContainerContentTemp.Count);
                 end;
             }
 
